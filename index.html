@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eric Yeats | AI Scientist</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="site-container">
+    
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+      <div class="brand">
+        <img src="assets/headshot.jfif" alt="Eric Yeats" class="avatar" />
+        <h1 class="name">Eric Yeats</h1>
+        <p class="title">AI Scientist · PNNL</p>
+      </div>
+
+      <nav class="nav-links">
+        <a href="#about" class="nav-item active">About</a>
+        <a href="#publications" class="nav-item">Selected Publications</a>
+        <a href="#experience" class="nav-item">Experience</a>
+      </nav>
+
+      <div class="external-links">
+        <a href="https://scholar.google.com/citations?user=ZZ1AtjgAAAAJ" target="_blank" rel="noopener noreferrer">Scholar</a>
+        <a href="https://github.com/ericyeats" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/eric-yeats-069b06257" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="content">
+      
+      <!-- About Section -->
+      <section id="about" class="section">
+        <h2>About</h2>
+        <p>
+          I am an AI Scientist at Pacific Northwest National Laboratory (PNNL) in Seattle, WA. 
+          I received my Ph.D. in Computer Engineering from Duke University, supported in part by a DOE-SCGSR Thesis Fellowship.
+        </p>
+        <p>
+          My research centers on computationally efficient, geometry-aware generative modeling, 
+          guidance for diffusion and flow matching, and monitoring/evaluation of trustworthy machine learning models.
+        </p>
+      </section>
+
+      <!-- Publications Section -->
+      <section id="publications" class="section">
+        <h2>Selected Publications</h2>
+        <div class="pub-list">
+
+          <article class="pub-card">
+            <div class="pub-header">
+                <span class="pub-venue">Preprint 2026</span>
+                <a href="https://arxiv.org/abs/2608.27750" target="_blank" rel="noopener noreferrer" class="pub-link">arXiv ↗</a>
+            </div>
+            <h3 class="pub-title">The Calls are Coming from Inside the Model: Investigating Probe-based Detection of Tool-Calling Errors in LLMs</h3>
+            <p class="pub-authors"><strong>E. Yeats</strong>, B. Kennedy, L. Truong, J. Buckheit, J. Lee, J. Friedbaum, J. Emanuello, H. Kvinge</p>
+            <p class="pub-summary">
+                Demonstrates that linear probes on intermediate LLM activations reliably catch semantic tool-calling failures across 18 models on the Berkeley Function Calling Leaderboard and generalize to unseen error categories.
+            </p>
+          </article>
+
+          <article class="pub-card">
+            <div class="pub-header">
+              <span class="pub-venue">Preprint 2025</span>
+              <a href="https://arxiv.org/abs/2511.21863" target="_blank" rel="noopener noreferrer" class="pub-link">arXiv ↗</a>
+            </div>
+            <h3 class="pub-title">Saddle-Free Guidance: Improved On-Manifold Sampling without Labels or Additional Training</h3>
+            <p class="pub-authors"><strong>E. Yeats</strong>, D. Hannan, W. Fearn, T. Doster, H. Kvinge, S. Mahan</p>
+            <p class="pub-summary">
+              Introduces training-free unconditional guidance via shifted power iterations that avoids saddle regions, reducing EDM2 Fréchet distance on ImageNet by 40% at half the memory cost of CFG.
+            </p>
+          </article>
+
+          <article class="pub-card">
+            <div class="pub-header">
+              <span class="pub-venue">NeurIPS SPIGM 2025</span>
+              <a href="https://arxiv.org/abs/2510.12975" target="_blank" rel="noopener noreferrer" class="pub-link">arXiv ↗</a>
+            </div>
+            <h3 class="pub-title">A Connection Between Score Matching and Local Intrinsic Dimension</h3>
+            <p class="pub-authors"><strong>E. Yeats</strong>, A. Jacobson, D. Hannan, Y. Jia, T. Doster, H. Kvinge, S. Mahan</p>
+            <p class="pub-summary">
+              Proves denoising score matching loss is lower-bounded by data intrinsic dimension, enabling a scalable estimator which significantly cuts GPU memory and latency with 25% lower MAE.
+            </p>
+          </article>
+
+          <article class="pub-card">
+            <div class="pub-header">
+              <span class="pub-venue">CVPR MUV 2026 (Oral)</span>
+              <a href="https://openaccess.thecvf.com/content/CVPR2026W/MUV/html/Mahan_Evaluating_and_Enhancing_Generative_Model_Unlearning_with_LLM_World_Knowledge_CVPRW_2026_paper.html" target="_blank" rel="noopener noreferrer" class="pub-link">CVPRW Proceedings ↗</a>
+            </div>
+            <h3 class="pub-title">Evaluating and Enhancing Generative Model Unlearning with LLM World Knowledge</h3>
+            <p class="pub-authors"><strong>E. Yeats</strong>, S. Mahan, D. Hannan, T. Doster, H. Kvinge, W. Fearn</p>
+            <p class="pub-summary">
+              Develops an automated VLM/LLM-powered framework to audit concept unlearning in text-to-image models, achieving a ~10% improvement in targeted knowledge removal.
+            </p>
+          </article>
+
+          <article class="pub-card">
+            <div class="pub-header">
+              <span class="pub-venue">ICLR 2025 (Spotlight)</span>
+              <a href="https://proceedings.iclr.cc/paper_files/paper/2025/hash/a2e3b4132ab2e0b7a21e6e75da7f91a9-Abstract-Conference.html" target="_blank" rel="noopener noreferrer" class="pub-link">ICLR Proceedings ↗</a>
+            </div>
+            <h3 class="pub-title">Min-k%++: Improved Baseline for Pre-training Data Detection from Large Language Models</h3>
+            <p class="pub-authors">J. Zhang, J. Sun, <strong>E. Yeats</strong>, Y. Ouyang, M. Kuo, J. Zhang, H. Li</p>
+            <p class="pub-summary">
+              Introduces an enhanced reference-free pre-training data detection scoring metric for LLMs, delivering substantial gains in membership inference AUROC.
+            </p>
+          </article>
+
+          <article class="pub-card">
+            <div class="pub-header">
+              <span class="pub-venue">ICLR 2023</span>
+              <a href="https://arxiv.org/abs/2302.04362" target="_blank" rel="noopener noreferrer" class="pub-link">arXiv ↗</a>
+            </div>
+            <h3 class="pub-title">Disentangling Learning Representations with Density Estimation</h3>
+            <p class="pub-authors"><strong>E. Yeats</strong>, F. Y. Liu, H. Li</p>
+            <p class="pub-summary">
+              Proposes Gaussian Channel Autoencoders (GCAE) to overcome parametric Gaussian limits in representation disentanglement via Dual Total Correlation.
+            </p>
+          </article>
+
+          <article class="pub-card">
+            <div class="pub-header">
+              <span class="pub-venue">ECCV 2022</span>
+              <a href="https://link.springer.com/chapter/10.1007/978-3-031-19812-0_3" target="_blank" rel="noopener noreferrer" class="pub-link">ECCV Proceedings ↗</a>
+            </div>
+            <h3 class="pub-title">NashAE: Disentangling Representations Through Adversarial Covariance Minimization</h3>
+            <p class="pub-authors"><strong>E. Yeats</strong>, F. Liu, D. Womble, H. Li</p>
+            <p class="pub-summary">
+              Derives scalable game-theoretic adversarial losses for autoencoders to produce decorrelated, information-rich latent spaces without explicit factor supervision.
+            </p>
+          </article>
+
+          <article class="pub-card">
+            <div class="pub-header">
+              <span class="pub-venue">ICML 2021</span>
+              <a href="https://proceedings.mlr.press/v139/yeats21a.html" target="_blank" rel="noopener noreferrer" class="pub-link">PMLR ↗</a>
+            </div>
+            <h3 class="pub-title">Improving Gradient Regularization Using Complex-Valued Neural Networks</h3>
+            <p class="pub-authors"><strong>E. C. Yeats</strong>, Y. Chen, H. Li</p>
+            <p class="pub-summary">
+              Leverages complex-valued network layers to resolve standard objective trade-offs during gradient regularization, raising PGD adversarial accuracy by 10%.
+            </p>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- Experience Section -->
+      <section id="experience" class="section">
+        <h2>Experience</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-meta">2024 — Present</div>
+            <div class="timeline-content">
+              <h3>Pacific Northwest National Laboratory</h3>
+              <p class="role">AI Scientist · Seattle, WA</p>
+              <p>
+                Lead research on continuous-time generative models and trustworthy AI systems. Developed Saddle-Free Guidance, a geometry-aware, training-free unconditional sampling method matching CFG cost with 50% less memory and cutting ImageNet Fréchet distance by 40% with EDM2. Formulated a theoretical framework showing Denoising Score Matching loss bounds local intrinsic dimension (LID), yielding a SOTA LID estimator that cuts GPU memory and latency by 80%. Designed automated VLM-driven evaluation suites to audit concept unlearning in foundation models, boosting targeted unlearning fidelity by ~10%, and built representation-based LLM tool-call verification achieving 90% AUROC.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-meta">Fall 2023</div>
+            <div class="timeline-content">
+              <h3>Oak Ridge National Laboratory</h3>
+              <p class="role">DOE SCGSR Fellow · Oak Ridge, TN</p>
+              <p>
+                Conducted thesis fellowship research focused on geometric deep learning and AI for scientific discovery. Designed and implemented 3D equivariant graph neural network (GNN) diffusion architectures in PyTorch Geometric for atomistic materials generation, demonstrating conditioned spatial coordinate and physical property generation on the QM9 benchmark.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-meta">Summer 2023</div>
+            <div class="timeline-content">
+              <h3>Pacific Northwest National Laboratory</h3>
+              <p class="role">Ph.D. Research Intern · Remote</p>
+              <p>
+                Researched robust representation learning strategies for vision models in adverse environments. Developed novel representation objectives for object detectors that increased corrupted-input mAP by ~30% while maintaining performance on clean distributions.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-meta">2019 — 2024</div>
+            <div class="timeline-content">
+              <h3>Duke University</h3>
+              <p class="role">Ph.D. Researcher & Teaching Assistant · Durham, NC</p>
+              <p>
+                Authored doctoral dissertation on regularization methods for interpretable, robust deep representations and trustworthy systems. Co-developed the Min-k%++ benchmark for reference-free LLM pre-training data detection (ICLR '25 Spotlight), introduced adversarial covariance minimization for latent disentanglement (ECCV '22, ICLR '23), and engineered complex-valued neural network layers improving adversarial robustness under gradient regularization (ICML '21). Served as graduate teaching assistant for undergraduate and graduate computer architecture.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="site-footer">
+        <p>© 2026 Eric Yeats</p>
+      </footer>
+
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
